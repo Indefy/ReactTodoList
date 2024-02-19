@@ -1,4 +1,8 @@
-# React + Vite
+# React + Vite + Scss
+
+This project created by Adi Booker, A Todo List web project created with React.
+
+    To run the project use simply clone the project repository and run: `npm run dev' in the bash terminal.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
