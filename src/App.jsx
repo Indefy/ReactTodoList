@@ -1,7 +1,7 @@
 import { useState } from "react"
 import {NewTodoForm} from "./NewTodoForm"
 import { TodoList } from "./TodoList"
-import "../styling/style2.scss"
+import "../styling/style.scss"
 import "../styling/colors-var.scss"
 
 export default function App() {
