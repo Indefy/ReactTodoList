@@ -1,0 +1,306 @@
+@import '/styles/colors-var.scss';
+
+// /* Define color theme variables */
+// $color-theme-main: #E9F1FA;
+// $color-theme-secondary: #4ABFD9;
+// $color-theme-third: #F26DB6;
+// $color-theme-fifth: #231540;
+// $white: (#FFFFFFFF);
+// $light-grey: #c0cbd0;
+// $blue: (#E9F1FA);
+// $ultra-blue: (#00ABE4);
+
+
+// :root {
+
+// }
+
+/* Apply gradient background to HTML */
+html {
+    width: 100%;
+    height: max-content;
+    animation: gradient 2s ease infinite;
+    background: linear-gradient(-10deg, $white, $ultra-blue, #c0cbd0, $blue);
+}
+
+/* Apply box-sizing and margin bottom to all elements */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Define gradient animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Apply styles to body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--color-theme-fifth);
+    color: var(--color-theme-fifth);
+    padding: 5vh 8vw;
+    margin: 8vh 8vw;
+    min-height: 90vh;
+    height: fit-content;
+    border-radius: 0.7rem;
+    box-shadow: 0px 11px 30px 5px rgba(0, 0, 0, 0.6862745098);
+    flex-wrap: nowrap;
+
+    // display: flex;
+    // justify-content: center;
+    // background: var(--color-theme-fifth);
+    // color: var(--color-theme-fifth);
+    // min-width: 25vw;
+    // max-width: max-content;
+    // /* width: 50%; */
+    // max-height: 35vh;
+    // padding: 10vh;
+    // margin: 20vh 33vh;
+    // /* margin-right: 25%; */
+    // /* margin-left: 35%; */
+    // border-radius: 0.7rem;
+    // box-shadow: 0px 11px 30px 5px rgba(0, 0, 0, 0.6862745098);
+    // align-items: center;
+}
+
+/* Apply styles to the form container */
+#new-frm-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 43rem;
+    /* padding: 2.5vh 31vw; */
+    /* width: auto; */
+    align-items: center;
+    
+    // display: flex;
+    // flex-direction: column;
+    // gap: 0.5rem;
+    // max-width: 35rem;
+    // margin: 0 3vw;
+    // padding: 2.5vh 10vw;
+    // width: auto;
+    // align-items: center;
+}
+
+#item{
+    align-self: center;
+    height: 5vh;
+    width: 70vw;
+    max-width: 100vw;
+    border: 1px solid red;
+}
+
+/* Apply styles to form container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+    // margin-bottom: 3vh;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 0.5rem;
+    // align-items: center;
+}
+
+/* Apply styles to form row */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0 15vw 2vh;
+    width: auto;
+    align-items: center;
+}
+
+/* Apply styles to form row label */
+.form-row label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 2vh 20vh;
+}
+
+
+/* Apply styles to buttons */
+.botn {
+    background: var(--color-theme-secondary);
+    border: 1px solid #6c00a7;
+    color: var(--color-theme-fifth);
+    padding: 0.25rem 6.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px #000;
+    cursor: pointer;
+    outline: none;
+    width: 25vw;
+    max-width: 120vw;
+    margin: 0 12vw;
+}
+
+/* Apply styles to buttons on hover and focus */
+.botn:hover,
+.botn:focus-visible {
+    background: hsl(0, 100%, 40%, 0.2);
+}
+
+.btn.btn-danger{
+    background: hsl(177, 100%, 63%);
+    border: 1px solid hsl(177, 73%, 25%);
+    color: var(--color-theme-fifth);
+    padding: 0.25rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px #000;
+    cursor: pointer;
+    outline: none;
+    margin-right: 15vmax;
+}
+
+/* Apply styles to delete button on hover and focus */
+.btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+    background: hsl(0, 100%, 40%, 0.2);
+}
+
+/* Apply padding to input elements within new item form */
+// .new-item-form input {
+//     padding: 0 2vh 2vh;
+//     min-width: 400px;
+//     outline: none;
+//     border: 1px solid var(--color-theme-fifth);
+//     background: var(--color-theme-third);
+//     border-radius: 0.25em;
+//     box-shadow: 0 0 4px 1px #000;
+//     color: var(--color-theme-fifth);
+// }
+
+/* Apply styles to input elements within new item form on focus */
+.new-item-form input:focus {
+    align-items: center;
+    border: 1px solid $light-grey;
+}
+
+
+/* Apply styles to header */
+.header {
+    font-size: 1.5rem;
+    margin: 3vh 22vw;
+}
+
+/* Apply styles to list */
+.list {
+    margin-left: 8vmax;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    
+    // margin: 0;
+    // padding: 0;
+    // margin-left: 9vh;
+    // list-style: none;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 0.3rem;
+}
+
+/* Apply styles to list items */
+.list li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Apply styles to label within list items */
+.list li label {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 2vh 5vw;
+    align-items: center;
+}
+
+/* Apply styles to checked checkboxes within list items */
+.list li input[type="checkbox"]:checked + label {
+    text-decoration: line-through 3px red;
+}
+
+/* Apply styles to label before pseudo-element on hover */
+.list li label:hover::before {
+    background: hsl(200, 100%, 80%);
+}
+
+/* Apply styles to checked checkboxes label before pseudo-element */
+.list li input[type="checkbox"]:checked + label::before {
+    content: "✔";
+    background: hsl(200, 100%, 40%);
+    text-decoration: none;
+    color: hsl(200, 100%, 90%);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* Apply styles to checked checkboxes label before pseudo-element on hover */
+.list li input[type="checkbox"]:checked + label:hover::before {
+    background: hsl(200, 100%, 30%);
+}
+
+/* Apply styles to label within list items when input is focused */
+.list li:has(input:focus-visible) label {
+    outline: 1px solid hsl(200, 100%, 50%);
+}
+
+/* Apply background color to root element */
+#root {
+    background: var(--color-theme-fourth);
+}
+
+/* Apply background color to form name */
+#frm-item-name {
+    background: var(--color-theme-fourth);
+}
+
+/* Apply background color to form row */
+.form-row {
+    background: var(--color-theme-fourth);
+}
+
+/* Apply background color and text color to form container */
+.form-container {
+    background: var(--color-theme-fourth);
+    color: var(--color-theme-third);
+}
+
+/* Apply background color to new item form */
+.new-item-form {
+    background: var(--color-theme-fourth);
+}
+
+/* Apply background color to header */
+.header {
+    display: flex;
+    background: var(--color-theme-fourth);
+    justify-content: center;
+}
+
+/* Apply background color to list */
+.list {
+    background: var(--color-theme-fourth);
+}
+
+/* Apply background color to paragraphs within unordered lists */
+ul p {
+    background: var(--color-theme-fourth);
+}

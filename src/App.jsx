@@ -1,8 +1,8 @@
 import { useState } from "react"
-import {NewTodoForm} from "./NewTodoForm"
-import { TodoList } from "./TodoList"
-import "../styling/style.scss"
-import "../styling/colors-var.scss"
+import {NewTodoForm} from "./components/NewTodoForm"
+import { TodoList } from "./components/TodoList"
+import '../styles/style.scss'
+import "../styles/colors-var.scss"
 
 export default function App() {
   const [todos, setTodos] = useState([])
