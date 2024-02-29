@@ -14,7 +14,7 @@ import path from 'path';
 export default defineConfig(({ command, mode }) => {
   return {
     plugins: [react()], 
-    base: '.', 
+    base: '', 
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),  

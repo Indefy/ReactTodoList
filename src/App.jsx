@@ -11,7 +11,7 @@ export default function App() {
     setTodos(currentTodos => {
          return [
          ...currentTodos,
-         { id: crypto.randomUUID(), title: title, completed: false },
+         { id: crypto.randomUUID(), title: title, completed: false,  },
          ]
        })
   }

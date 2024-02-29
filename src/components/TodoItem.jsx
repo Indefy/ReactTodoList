@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export function TodoItem({ id, title, completed, toggleTodo, deleteTodo}) {
     return (
      <li>
@@ -6,6 +8,7 @@ export function TodoItem({ id, title, completed, toggleTodo, deleteTodo}) {
                  type="checkbox" 
                  checked={completed} 
                  onChange={e => toggleTodo(id, e.target.checked)}
+                 style={completed? { }: {}}
              />
              <span style={completed ? { textDecoration: 'line-through' } : {}}>
                  {title}
